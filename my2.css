@@ -1,0 +1,649 @@
+body{
+	background-image: url("./images/background.jpg");
+	background-size: cover;
+	background-attachment: fixed;
+
+}
+
+
+#ninja-music-logo div img{
+	height:60px;
+	width:80px;
+	border-radius:50%;
+	margin-left:5px;
+
+	display:inline-block;
+	
+}
+
+#ninja-music-logo{
+	color:white;
+	font-family:monospace;
+	display:flex;
+	margin-top:50px;
+
+}
+
+#ninja-music-logo div{
+	display:inline-block;
+}
+
+#logo,.logo-names{
+	margin-left:2%;
+}
+
+#logo-for-mobileDevice{
+	display:none;
+}
+
+#logo-x{
+	animation:rotate 1s ease-in-out infinite;
+}
+
+
+#logo-y{
+	animation :rotate 1s ease-in-out infinite;
+}
+
+@keyframes rotate{
+	from{
+		transform:rotate(0deg);
+	}
+
+	to{
+		transform:rotate(360deg);
+	}
+}
+#favourites a{
+
+	text-decoration: none;
+	color:white;
+	font-size:1.2rem;
+
+}
+
+#favourites{
+
+	margin-left:11%;
+}
+
+#search-bar input,#search-bar button{
+	background: transparent;
+	font-size:1.2rem;
+	border-radius:10%;
+	outline:none;
+	border:none;
+	text-decoration: none;
+	border:none;
+	background-color:white;
+	color:black;
+	border-radius: 18px;
+
+}
+
+#search-bar{
+	margin-left:26%;
+	background-color:white;
+	height:3.8vh;
+	border-radius:18px;
+
+
+}
+
+#search-bar i{
+	color:grey;
+}
+
+#notifications{
+	margin-left:12%;
+}
+
+#notifications a{
+	color:white;
+}
+
+
+#profile img{
+	border-radius:50%;
+}
+
+#profile{
+	margin-top : -6px !important;
+	margin-left:3%;
+}
+
+
+
+
+
+/*main*/
+
+main{
+	width:65%;
+	display:inline-block;
+}
+/*wallpapers*/
+
+#cards{
+	display:flex;
+	flex-wrap:wrap;
+	margin-left:10%;
+	margin-top:6vh;
+
+}
+
+#cards img{
+
+	height:256px;
+	width:280px;
+
+}
+
+#cards img:hover{
+	transform: scale(1.2);
+	border : 2px solid black;
+	box-shadow:5px;
+}
+
+
+/*latest-release-container*/
+#latest-release-container{
+	margin-left:5%;
+	margin-top:10px;
+
+}
+
+
+#latest-release{
+	display:flex;
+	height:auto;
+	flex-wrap: wrap;
+}
+.latest-songs{
+	display:flex;
+	justify-content: center;
+	align-items:center;
+	height:100px;
+    min-width:40%;
+
+
+}
+
+.latest-songs:hover{
+	border:2px solid white;
+	box-shadow: 5px;
+
+}
+
+.latest-songs img{
+	width:110px;
+	height:100%;
+	display:inline-block;
+
+}
+
+.song-details{
+	position:relative;
+	top:0px;
+	margin-left:5%;
+	margin-bottom:2vh;
+	display:inline-block;
+
+}
+
+
+/*popular-artist-container*/
+
+
+
+#popular-artists-container{
+		margin-left:5%;
+	margin-top:10px;
+
+}
+.popular-artist{
+	display:flex;
+	flex-wrap:wrap;
+
+}
+
+.popular-artist a{
+	text-decoration:none;
+	color:white;
+}
+
+.artist-image{
+	border-radius:50%;
+	height:15vh;
+	width:7vw;
+}
+
+.artist{
+	margin-left:15px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:center;
+}
+
+.artist p{
+	position: relative;
+	top:-10%;
+}
+
+
+/*stations*/
+
+.stations {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	margin-right: 10px;
+}
+/* these divs are for the colourful boxes in the themes section */
+#div1 {
+	width: 12vw;
+	height: 8vw;
+	background-color: darkslateblue;
+}
+#div2 {
+	position: relative;
+	top: -1vw;
+	left: 1vw;
+	width: 10vw;
+	height: 10vw;
+	background-color: lightgreen;
+}
+#div3 {
+	position: relative;
+	top: -1vw;
+	left: 1vw;
+	width: 8vw;
+	height: 12vw;
+	background-color: orange;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+/* logo in the outermost div */
+#div3 img {
+	width: 5vw;
+	height: 5vw;
+}
+/* "stations" text */
+#div3 p {
+	font-size: 2vw;
+}
+/* images in the music themes section */
+
+.music-themes{
+	display: flex;
+	flex-wrap:wrap;
+}
+.music-themes div img {
+	width: 8vw;
+	height: 8vw;
+	border-radius: 50%;
+	position: relative;
+	top:20%;
+}
+/* this is the sub content of the themes section */
+.theme-content {
+	margin: 3%;
+	height: 8vw;
+	width: 8vw;
+	text-align: center;
+	border-radius: 100%;
+}
+/* text within the themes section */
+.theme-content p {
+	text-align: center;
+	position: relative;
+	top: -8.25vw;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	font-size: 2vw;
+	background-image: linear-gradient(
+		0deg,
+		rgb(201, 200, 185) -66%,
+		rgba(0, 0, 0, 0)
+	);
+	transition: background-image 0.3s;
+}
+
+.theme-content p:hover {
+	background-image: linear-gradient(
+		0deg,
+		rgb(255, 50, 10) -66%,
+		rgba(0, 0, 0, 0)
+	);
+}
+/* container for theme contents */
+.theme-main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+
+/*music-theme-2*/
+
+.music-theme2{
+	display:flex;
+	position:relative;
+	top:5vw;
+	height:auto;
+	width:100%;
+	flex-wrap: wrap;
+	align-items:center;
+	justify-content: center;
+}
+
+.outer-div{
+	height:13vw;
+	width:19.5vw;
+	cursor:pointer;
+
+}
+
+.inner-div {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	background-position: center;
+	background-size: cover;
+	transition: all ease-in-out 0.3s;
+}
+
+.music-theme2 .outer-div:nth-child(1) .inner-div{
+	background-image: url("https://cdn.mos.cms.futurecdn.net/S63XEZkMLZySPEZiimtPrG-768-80.jpg");
+}
+
+
+.music-theme2 .outer-div:nth-child(2) .inner-div{
+	background-image: url("https://musicianonamission.com/wp-content/uploads/2019/05/audio-blur-close-up-164745.jpg");
+}
+
+
+
+.music-theme2 .outer-div:nth-child(3) .inner-div{
+	background-image: url("https://thoth.pickvisa.com/wp-content/uploads/2021/12/cb7d0d9b84044008a1bd9f88bf811b32.jpg");
+}
+
+
+.outer-div .inner-div span{
+	font-size:2vw;
+	color:white;
+
+}
+
+.inner-div{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.outer-div:hover{
+	border:2px solid white;
+	transform: scale(1.2);
+}
+
+
+/* Latest Songs English + Hindi */
+
+.latest-songs-container{
+	position:relative;
+	top:5vw;
+	left:3vw;
+
+
+}
+.latest-songs2{
+	display:flex;
+	flex-wrap:wrap;
+	
+	cursor:pointer;
+}
+
+.latest-songs2 div{
+	margin-left:8px;
+}
+
+.latest-songs2 div img{
+	height:13vw;
+	width:13vw;
+}
+
+.latest-songs2>div:hover{
+	border:2px solid white;
+	transform: scale(1.2);
+}
+
+.info{
+	color:white;
+}
+
+/*aside*/
+
+aside{
+	display:inline-block;
+	width:25%;
+	vertical-align: top;
+	margin-left:5%;
+}
+
+/*queue*/
+
+
+.queue{
+	margin-bottom: 7px;
+}
+
+.heart-add-icon2{
+	margin-left:18vw;
+	position:relative;
+	top:-20px;
+	color:grey;
+}
+
+.heart-add-icon2 i:hover{
+	color:white;
+}
+
+
+.song-wallpaper{
+	width:30px;
+	height:30px;
+	margin-left:5px;
+}
+
+.number{
+	position:relative;
+	top:-10px;
+}
+
+
+/*music player*/
+
+#music-player {
+	position:sticky;
+	background-color:grey;
+	height:auto;
+	
+	bottom:0%;
+}
+
+#music-player section{
+
+	display:flex;
+	align-items: center;
+	flex-wrap:wrap;
+
+}
+
+#music-player section img{
+	height:50px;
+	width:50px;
+}
+
+#music-player section i{
+	font-size:3vh;
+	color:white;
+	margin:10px;
+	cursor:pointer;
+}
+
+#music-player section i:nth-child(4){
+
+	margin-left :30%;
+
+
+}
+
+#music-player section i:nth-last-child(2){
+    
+	margin-left :30%;
+
+
+}
+
+#vol-icon{
+	position:relative;
+	right:-13%;
+	margin-left:0%;
+}
+
+
+#volume-container{
+	
+	width:6vw;
+	height:1vw;
+	position:relative;
+	right:-12.9%;
+	background-color:black;
+	border-radius:14vw;
+	cursor:pointer;
+}
+
+#volume{
+	height:100%;
+	width:75%;
+	background-color:cyan;
+	border-bottom-left-radius: 14vw;
+	border-top-left-radius: 14vw;
+
+}
+
+#volume:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    top: 0%;
+    right:15%;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: white;
+    z-index: 1;
+}
+
+
+#play-bar-container{
+
+	width:18vw;
+	height:0.5vw;
+	background-color:white;
+	border-radius:14vw;
+	cursor:pointer;
+
+	margin-left:37vw;
+	margin-bottom:10px;
+}
+
+#play-bar{
+	height:100%;
+	width:40%;
+	background-color: cyan;
+	border-bottom-left-radius: 14vw;
+	border-top-left-radius: 14vw;
+
+
+}
+
+
+
+
+/*media query*/
+
+@media screen and (max-width: 600px){
+
+	#ninja-music-logo{
+		display:none;
+	}
+	#logo-for-mobileDevice{
+		display:block;
+	}
+	.song-details{
+		display:none;
+	}
+	.heart-add-icon2{
+		display:none;
+	}
+
+
+	#volume:nth-child(1)::after {
+	    content: '';
+	    position: absolute;
+	    top: 0%;
+	    right:15%;
+	    height: 5px;
+	    width: 5px;
+	    border-radius: 50%;
+	    background-color: white;
+	    z-index: 1;
+	}
+	aside{
+		display:none;
+	}
+
+	main{
+		width:100%;
+	}
+
+}
+
+
+
+@media screen and (max-width:1500px){
+	#search-bar{
+		height:auto;
+
+	}
+}
+
+
+
+
+
+
+
+.time{
+	position:relative;
+	right:0%;
+}
+
+.color-white{
+	color:white;
+}
+
+.color-grey{
+	color:darkgrey;
+}
+
+.inline-block{
+	display:inline-block;
+}
