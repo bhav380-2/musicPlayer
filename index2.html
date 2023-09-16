@@ -1,89 +1,105 @@
+<!-- ------------welocme to popular artist page------------------ -->
+
+
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Music player</title>
 
-  <script src="https://kit.fontawesome.com/1505e6fedb.js" crossorigin="anonymous"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 
 
-    <link rel="stylesheet" type="text/CSS" href="./my.css">
+	<script src="https://kit.fontawesome.com/1505e6fedb.js" crossorigin="anonymous"></script>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+		integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+
+	<link rel="stylesheet" type="text/CSS" href="./index2.css">
 
 </head>
+
 <body>
 
+
+
+
+
 	<header>
+		<nav style="z-index:1; background-color: rgba(0, 0, 0, 0.961);"
+			class="navbar  border-bottom border-bottom-dark navbar-expand-lg mb-4" data-bs-theme="dark">
 
-		<div id="logo-for-mobileDevice" style="margin:3%">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="#">
 
-		<i id="logo-x"style="color:white;font-size:4vw"class="fa-solid fa-user-ninja"></i>
-		<span class="logo-names">
-	     		<span class="color-white"><h3>Bhawesh <br>Studio</h3></span>
-	    	</span>
-
-	</div>
+					<div id="music-logo">
+						<i class="fa-solid fa-headphones"></i> <span>Music</span>
+					</div>
+				</a>
 
 
-     
-		<div id="ninja-music-logo">
-			<div id="logo-y">
-			    <img src="./images/ninja.png" alt="ninja muscic logo">
-	    	</div>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
 
-	    	<div id="logo-names">
-	     		<span><h3>Bhawesh <br>Studio</h3></span>
-	    	</div>
+					</ul>
+					<form class="d-flex" role="search">
+						<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+						<button class="btn btn-outline-success" type="submit">Search</button>
+					</form>
+				</div>
+			</div>
+		</nav>
 
-	    	<div id="favourites">
-	    		<a href="#" > Favourites</a>
-	    	</div>
 
-	    	<div id="search-bar">
 
-	    		<button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
-	    		<input type="text" placeholder="Search..." name="search">
-	    	</div>
 
-	    	<div id="notifications">
-	    		<a href=""><i class="fa-solid fa-bell"></i></a>
-	    	</div>
-
-	    	<div id="profile">
-
-	    		<img src="./images/bhawesh.JPG">
-
-	    	</div>
-			
-		</div>
 
 	</header>
 
-	<main class="inline-block" style="display:inline-block;">
+	<main style="display:inline-block;">
 
-		
+
 		<div id="play-album-template" class="background-color">
 			<div id="coldplay-image">
-				<image src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg"alt="coldplay image">
+				<image
+					src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg"
+					alt="coldplay image">
 			</div>
 
 			<div id="description" class="color-white">
 
-				<h2> ColdPlay </h2>
 
-				<p class="text"> British Band</p>
+				<div id="title">
+					<h2> ColdPlay </h2>
+					<p> British Band</p>
+				</div>
 
-				<p class="text"> Coldplay is a british music band that has enjoyed continuous success since their inception in 1996 through their intelligent and soulful songs. The band members are Chris Martin(lead vocals), John Buckland(lead Guitar), Guy Berryman(bass guitar) and Will Champion(Drums).
+
+
+				<p class="text"> Coldplay is a british music band that has enjoyed continuous success since their
+					inception in 1996 through their intelligent and soulful songs. The band members are Chris
+					Martin(lead vocals), John Buckland(lead Guitar), Guy Berryman(bass guitar) and Will
+					Champion(Drums).
 				</p>
 
 				<div id="play-album-container">
-
-
-						<div id="play-album" >
-							<a href="#" class="color-white">Play all </a>
-						</div>
-
-						<p id="follow">
-							<a href="#" class="color-white"> Follow </a>
-						</p>
+					<button> Play all</button>
+					<button> follow</button>
 				</div>
 
 
@@ -91,335 +107,2273 @@
 		</div>
 
 
-		<div id="songs">
-			<div class="songs-background color-white"style="margin-top:3vh;margin-left:9%;">
-				<div class="number inline-block">01</div>
-				<img class="song-wallpaper inline-block" src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg" alt="song-wallpaper">
-				<div class="song-name inline-block">
-					<span>&ensp;Mirage</span><br>
-					<span>&ensp;Else</span>
-				</div>
-                
-                <div class="heart-add-icon">
-					<i class="fa-solid fa-heart"></i>
-					<i class="fa-solid fa-plus"></i>
-				</div>
+		<div id="songs-container">
 
-			</div>
+			<div class="song">
 
-			<div class="songs-background color-white margin">
-				<div class="number inline-block">02</div>
-				<img class="song-wallpaper inline-block" src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg" alt="song-wallpaper">
-				<div class="song-name inline-block">
+				<div class="number"><span>01</span></div>
+				<img class="song-wallpaper"
+					src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
 					<span>&ensp;Worry about us</span><br>
-					<span>&ensp;Rosie Lowe</span>
+					<span>&ensp;Rosie Low</span>
 				</div>
 
-				 <div class="heart-add-icon">
+
+				<div class="heart-add-icon2">
 					<i class="fa-solid fa-heart"></i>
-					<i class="fa-solid fa-plus"></i>
-
 				</div>
-
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
 
 
 			</div>
 
 
-			<div class="songs-background color-white margin">
-				<div class="number inline-block">03</div>
-				<img class="song-wallpaper inline-block" src="https://media.pitchfork.com/photos/5935a113a28a096fc429225c/2:1/w_2560%2Cc_limit/310cc5e7.jpg" alt="song-wallpaper">
-				<div class="song-name inline-block">
+
+			<div class="song color-white">
+
+				<div class="number"><span>02</span></div>
+				<img class="song-wallpaper"
+					src="https://media.pitchfork.com/photos/5935a113a28a096fc429225c/2:1/w_2560%2Cc_limit/310cc5e7.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
 					<span>&ensp;New Skin</span><br>
 					<span>&ensp;Flume</span>
 				</div>
 
-				 <div class="heart-add-icon">
+
+				<div class="heart-add-icon2">
 					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
 					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>03</span></div>
+				<img class="song-wallpaper" src="https://upload.wikimedia.org/wikipedia/en/9/9b/Yellow_cover_art.JPG"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Yellow</span><br>
+					<span>&ensp;Yellow</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>04</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-Jbjv2Q5XRC6FPPVw-LbfQHg-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;My Universe</span><br>
+					<span>&ensp;Music of the Spheres</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>05</span></div>
+				<img class="song-wallpaper"
+					src="https://w0.peakpx.com/wallpaper/435/69/HD-wallpaper-a-sky-full-of-stars-black-coldplay-dark-galaxy-hate-love-phone-romantic-stars-valentine.jpg">
+				<div class="song-name">
+					<span>&ensp;A Sky full of stars</span><br>
+					<span>&ensp;Ghost Stories</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>06</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-000126172960-u72sek-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Sparks</span><br>
+					<span>&ensp;Parachutes</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>07</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-e6fCSbBkPv1n-0-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Trouble</span><br>
+					<span>&ensp;Live 2003</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>08</span></div>
+				<img class="song-wallpaper" src="https://images-na.ssl-images-amazon.com/images/I/811tle6v7MS.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Daddy</span><br>
+					<span>&ensp;Everyday Life</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>09</span></div>
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>11</span></div>
+				<img class="song-wallpaper"
+					src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Worry about us</span><br>
+					<span>&ensp;Rosie Low</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>12</span></div>
+				<img class="song-wallpaper"
+					src="https://media.pitchfork.com/photos/5935a113a28a096fc429225c/2:1/w_2560%2Cc_limit/310cc5e7.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;New Skin</span><br>
+					<span>&ensp;Flume</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>13</span></div>
+				<img class="song-wallpaper" src="https://upload.wikimedia.org/wikipedia/en/9/9b/Yellow_cover_art.JPG"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Yellow</span><br>
+					<span>&ensp;Yellow</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>14</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-Jbjv2Q5XRC6FPPVw-LbfQHg-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;My Universe</span><br>
+					<span>&ensp;Music of the Spheres</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>15</span></div>
+				<img class="song-wallpaper"
+					src="https://w0.peakpx.com/wallpaper/435/69/HD-wallpaper-a-sky-full-of-stars-black-coldplay-dark-galaxy-hate-love-phone-romantic-stars-valentine.jpg">
+				<div class="song-name">
+					<span>&ensp;A Sky full of stars</span><br>
+					<span>&ensp;Ghost Stories</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>16</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-000126172960-u72sek-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Sparks</span><br>
+					<span>&ensp;Parachutes</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>17</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-e6fCSbBkPv1n-0-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Trouble</span><br>
+					<span>&ensp;Live 2003</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>18</span></div>
+				<img class="song-wallpaper" src="https://images-na.ssl-images-amazon.com/images/I/811tle6v7MS.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Daddy</span><br>
+					<span>&ensp;Everyday Life</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>19</span></div>
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>20</span></div>
+				<img class="song-wallpaper"
+					src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Worry about us</span><br>
+					<span>&ensp;Rosie Low</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>21</span></div>
+				<img class="song-wallpaper"
+					src="https://media.pitchfork.com/photos/5935a113a28a096fc429225c/2:1/w_2560%2Cc_limit/310cc5e7.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;New Skin</span><br>
+					<span>&ensp;Flume</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>22</span></div>
+				<img class="song-wallpaper" src="https://upload.wikimedia.org/wikipedia/en/9/9b/Yellow_cover_art.JPG"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Yellow</span><br>
+					<span>&ensp;Yellow</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>23</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-Jbjv2Q5XRC6FPPVw-LbfQHg-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;My Universe</span><br>
+					<span>&ensp;Music of the Spheres</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>24</span></div>
+				<img class="song-wallpaper"
+					src="https://w0.peakpx.com/wallpaper/435/69/HD-wallpaper-a-sky-full-of-stars-black-coldplay-dark-galaxy-hate-love-phone-romantic-stars-valentine.jpg">
+				<div class="song-name">
+					<span>&ensp;A Sky full of stars</span><br>
+					<span>&ensp;Ghost Stories</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>25</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-000126172960-u72sek-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Sparks</span><br>
+					<span>&ensp;Parachutes</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>26</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-e6fCSbBkPv1n-0-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Trouble</span><br>
+					<span>&ensp;Live 2003</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>27</span></div>
+				<img class="song-wallpaper" src="https://images-na.ssl-images-amazon.com/images/I/811tle6v7MS.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Daddy</span><br>
+					<span>&ensp;Everyday Life</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>28</span></div>
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>29</span></div>
+				<img class="song-wallpaper"
+					src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Worry about us</span><br>
+					<span>&ensp;Rosie Low</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>30</span></div>
+				<img class="song-wallpaper"
+					src="https://media.pitchfork.com/photos/5935a113a28a096fc429225c/2:1/w_2560%2Cc_limit/310cc5e7.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;New Skin</span><br>
+					<span>&ensp;Flume</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>31</span></div>
+				<img class="song-wallpaper" src="https://upload.wikimedia.org/wikipedia/en/9/9b/Yellow_cover_art.JPG"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Yellow</span><br>
+					<span>&ensp;Yellow</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>32</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-Jbjv2Q5XRC6FPPVw-LbfQHg-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;My Universe</span><br>
+					<span>&ensp;Music of the Spheres</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>33</span></div>
+				<img class="song-wallpaper"
+					src="https://w0.peakpx.com/wallpaper/435/69/HD-wallpaper-a-sky-full-of-stars-black-coldplay-dark-galaxy-hate-love-phone-romantic-stars-valentine.jpg">
+				<div class="song-name">
+					<span>&ensp;A Sky full of stars</span><br>
+					<span>&ensp;Ghost Stories</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>34</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-000126172960-u72sek-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Sparks</span><br>
+					<span>&ensp;Parachutes</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>35</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-e6fCSbBkPv1n-0-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Trouble</span><br>
+					<span>&ensp;Live 2003</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>36</span></div>
+				<img class="song-wallpaper" src="https://images-na.ssl-images-amazon.com/images/I/811tle6v7MS.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Daddy</span><br>
+					<span>&ensp;Everyday Life</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>37</span></div>
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>38</span></div>
+				<img class="song-wallpaper"
+					src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Worry about us</span><br>
+					<span>&ensp;Rosie Low</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>39</span></div>
+				<img class="song-wallpaper"
+					src="https://media.pitchfork.com/photos/5935a113a28a096fc429225c/2:1/w_2560%2Cc_limit/310cc5e7.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;New Skin</span><br>
+					<span>&ensp;Flume</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>40</span></div>
+				<img class="song-wallpaper" src="https://upload.wikimedia.org/wikipedia/en/9/9b/Yellow_cover_art.JPG"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Yellow</span><br>
+					<span>&ensp;Yellow</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>41</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-Jbjv2Q5XRC6FPPVw-LbfQHg-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;My Universe</span><br>
+					<span>&ensp;Music of the Spheres</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>42</span></div>
+				<img class="song-wallpaper"
+					src="https://w0.peakpx.com/wallpaper/435/69/HD-wallpaper-a-sky-full-of-stars-black-coldplay-dark-galaxy-hate-love-phone-romantic-stars-valentine.jpg">
+				<div class="song-name">
+					<span>&ensp;A Sky full of stars</span><br>
+					<span>&ensp;Ghost Stories</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>43</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-000126172960-u72sek-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Sparks</span><br>
+					<span>&ensp;Parachutes</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>44</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-e6fCSbBkPv1n-0-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Trouble</span><br>
+					<span>&ensp;Live 2003</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>45</span></div>
+				<img class="song-wallpaper" src="https://images-na.ssl-images-amazon.com/images/I/811tle6v7MS.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Daddy</span><br>
+					<span>&ensp;Everyday Life</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>46</span></div>
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>47</span></div>
+				<img class="song-wallpaper"
+					src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Worry about us</span><br>
+					<span>&ensp;Rosie Low</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>48</span></div>
+				<img class="song-wallpaper"
+					src="https://media.pitchfork.com/photos/5935a113a28a096fc429225c/2:1/w_2560%2Cc_limit/310cc5e7.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;New Skin</span><br>
+					<span>&ensp;Flume</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>49</span></div>
+				<img class="song-wallpaper" src="https://upload.wikimedia.org/wikipedia/en/9/9b/Yellow_cover_art.JPG"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Yellow</span><br>
+					<span>&ensp;Yellow</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>50</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-Jbjv2Q5XRC6FPPVw-LbfQHg-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;My Universe</span><br>
+					<span>&ensp;Music of the Spheres</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>51</span></div>
+				<img class="song-wallpaper"
+					src="https://w0.peakpx.com/wallpaper/435/69/HD-wallpaper-a-sky-full-of-stars-black-coldplay-dark-galaxy-hate-love-phone-romantic-stars-valentine.jpg">
+				<div class="song-name">
+					<span>&ensp;A Sky full of stars</span><br>
+					<span>&ensp;Ghost Stories</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>52</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-000126172960-u72sek-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Sparks</span><br>
+					<span>&ensp;Parachutes</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>53</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-e6fCSbBkPv1n-0-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Trouble</span><br>
+					<span>&ensp;Live 2003</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>54</span></div>
+				<img class="song-wallpaper" src="https://images-na.ssl-images-amazon.com/images/I/811tle6v7MS.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Daddy</span><br>
+					<span>&ensp;Everyday Life</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>55</span></div>
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>56</span></div>
+				<img class="song-wallpaper"
+					src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Worry about us</span><br>
+					<span>&ensp;Rosie Low</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>57</span></div>
+				<img class="song-wallpaper"
+					src="https://media.pitchfork.com/photos/5935a113a28a096fc429225c/2:1/w_2560%2Cc_limit/310cc5e7.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;New Skin</span><br>
+					<span>&ensp;Flume</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>58</span></div>
+				<img class="song-wallpaper" src="https://upload.wikimedia.org/wikipedia/en/9/9b/Yellow_cover_art.JPG"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Yellow</span><br>
+					<span>&ensp;Yellow</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>59</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-Jbjv2Q5XRC6FPPVw-LbfQHg-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;My Universe</span><br>
+					<span>&ensp;Music of the Spheres</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>60</span></div>
+				<img class="song-wallpaper"
+					src="https://w0.peakpx.com/wallpaper/435/69/HD-wallpaper-a-sky-full-of-stars-black-coldplay-dark-galaxy-hate-love-phone-romantic-stars-valentine.jpg">
+				<div class="song-name">
+					<span>&ensp;A Sky full of stars</span><br>
+					<span>&ensp;Ghost Stories</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>61</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-000126172960-u72sek-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Sparks</span><br>
+					<span>&ensp;Parachutes</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>62</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-e6fCSbBkPv1n-0-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Trouble</span><br>
+					<span>&ensp;Live 2003</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>63</span></div>
+				<img class="song-wallpaper" src="https://images-na.ssl-images-amazon.com/images/I/811tle6v7MS.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Daddy</span><br>
+					<span>&ensp;Everyday Life</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>64</span></div>
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>65</span></div>
+				<img class="song-wallpaper"
+					src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Worry about us</span><br>
+					<span>&ensp;Rosie Low</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>67</span></div>
+				<img class="song-wallpaper"
+					src="https://media.pitchfork.com/photos/5935a113a28a096fc429225c/2:1/w_2560%2Cc_limit/310cc5e7.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;New Skin</span><br>
+					<span>&ensp;Flume</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>68</span></div>
+				<img class="song-wallpaper" src="https://upload.wikimedia.org/wikipedia/en/9/9b/Yellow_cover_art.JPG"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Yellow</span><br>
+					<span>&ensp;Yellow</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>69</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-Jbjv2Q5XRC6FPPVw-LbfQHg-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;My Universe</span><br>
+					<span>&ensp;Music of the Spheres</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>70</span></div>
+				<img class="song-wallpaper"
+					src="https://w0.peakpx.com/wallpaper/435/69/HD-wallpaper-a-sky-full-of-stars-black-coldplay-dark-galaxy-hate-love-phone-romantic-stars-valentine.jpg">
+				<div class="song-name">
+					<span>&ensp;A Sky full of stars</span><br>
+					<span>&ensp;Ghost Stories</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>71</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-000126172960-u72sek-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Sparks</span><br>
+					<span>&ensp;Parachutes</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>72</span></div>
+				<img class="song-wallpaper" src="https://i1.sndcdn.com/artworks-e6fCSbBkPv1n-0-t500x500.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Trouble</span><br>
+					<span>&ensp;Live 2003</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>73</span></div>
+				<img class="song-wallpaper" src="https://images-na.ssl-images-amazon.com/images/I/811tle6v7MS.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Daddy</span><br>
+					<span>&ensp;Everyday Life</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+			<div class="song color-white">
+
+				<div class="number"><span>74</span></div>
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+			<div class="song color-white">
+
+				<div class="number"><span>75</span></div>
+				<img class="song-wallpaper"
+					src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Worry about us</span><br>
+					<span>&ensp;Rosie Low</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+				<div class="add-icon">
+					<i class="fa-solid fa-plus"></i>
+				</div>
+
+
+			</div>
+
+
+		</div>
+
+
+
+
+
+
+		<!-- </div> -->
+
+
+
+	</main>
+
+	<aside>
+
+
+
+		<div id="similar-artists-container">
+			<h1 class="color-white">
+				Similar&nbsp;Artists
+			</h1>
+
+			<div class="artist" class="color-white">
+				<img src="https://i.scdn.co/image/ab67706f000000035324fd190d03c6f3160c9bc8" alt="wallpaper">
+				<div>
+					<p class="color-white">Imagine Dragons</p>
+					<p class="color-white">pop band </p>
 				</div>
 
 			</div>
 
-			<div class="songs-background color-white margin">
-				<div class="number inline-block">04</div>
-				<img class="song-wallpaper inline-block" src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg" alt="song-wallpaper">
+
+			<div class="artist" class="color-white">
+				<img src="https://i.scdn.co/image/ab67706f000000035324fd190d03c6f3160c9bc8" alt="wallpaper">
+				<div>
+					<p class="color-white">Imagine Dragons</p>
+					<p class="color-white">pop band </p>
+				</div>
+
+
+			</div>
+
+
+			<div class="artist" class="color-white">
+				<img src="https://i.scdn.co/image/ab67706f000000035324fd190d03c6f3160c9bc8" alt="wallpaper">
+				<div>
+					<p class="color-white">Imagine Dragons</p>
+					<p class="color-white">pop band </p>
+				</div>
+			</div>
+			<div class="artist" class="color-white">
+				<img src="https://i.scdn.co/image/ab67706f000000035324fd190d03c6f3160c9bc8" alt="wallpaper">
+				<div>
+					<p class="color-white">Imagine Dragons</p>
+					<p class="color-white">pop band </p>
+				</div>
+
+			</div>
+
+
+			<div class="artist" class="color-white">
+				<img src="https://i.scdn.co/image/ab67706f000000035324fd190d03c6f3160c9bc8" alt="wallpaper">
+				<div>
+					<p class="color-white">Imagine Dragons</p>
+					<p class="color-white">pop band </p>
+				</div>
+
+
+			</div>
+
+
+			<div class="artist" class="color-white">
+				<img src="https://i.scdn.co/image/ab67706f000000035324fd190d03c6f3160c9bc8" alt="wallpaper">
+				<div>
+					<p class="color-white">Imagine Dragons</p>
+					<p class="color-white">pop band </p>
+				</div>
+			</div>
+			<div class="artist" class="color-white">
+				<img src="https://i.scdn.co/image/ab67706f000000035324fd190d03c6f3160c9bc8" alt="wallpaper">
+				<div>
+					<p class="color-white">Imagine Dragons</p>
+					<p class="color-white">pop band </p>
+				</div>
+
+			</div>
+
+
+		</div>
+
+		<div id="recently-played-container">
+
+			<h1 class="color-white">
+				Recently&nbsp;Played
+			</h1>
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+			</div>
+
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
 				<div class="song-name inline-block">
 					<span>&ensp;Mirage</span><br>
 					<span>&ensp;Else</span>
 				</div>
 
-				 <div class="heart-add-icon">
+
+				<div class="heart-add-icon2">
 					<i class="fa-solid fa-heart"></i>
-					<i class="fa-solid fa-plus"></i>
 				</div>
+
+
+
 
 			</div>
 
-			<div class="songs-background color-white margin">
-				<div class="number inline-block">05</div>
-				<img class="song-wallpaper inline-block" src="https://upload.wikimedia.org/wikipedia/en/9/9b/Yellow_cover_art.JPG" alt="song-wallpaper">
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+					alt="song-wallpaper">
 				<div class="song-name inline-block">
-					<span>&ensp;Yellow</span><br>
-					<span>&ensp;Yellow</span>
+					<span>&ensp;Venom</span><br>
+					<span>&ensp;Kamikaze</span>
 				</div>
 
-				 <div class="heart-add-icon">
+
+				<div class="heart-add-icon2">
 					<i class="fa-solid fa-heart"></i>
-					<i class="fa-solid fa-plus"></i>
 				</div>
+
+
+
 
 			</div>
 
-			<div class="songs-background color-white margin">
-				<div class="number inline-block">06</div>
-				<img class="song-wallpaper inline-block" src="https://i1.sndcdn.com/artworks-Jbjv2Q5XRC6FPPVw-LbfQHg-t500x500.jpg" alt="song-wallpaper">
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+					alt="song-wallpaper">
 				<div class="song-name inline-block">
-					<span>&ensp;My Universe</span><br>
-					<span>&ensp;Music of the spheres</span>
+					<span>&ensp;Till I Collapse</span><br>
+					<span>&ensp;The&nbsp;Eminem...</span>
 				</div>
 
-				 <div class="heart-add-icon">
+
+				<div class="heart-add-icon2">
 					<i class="fa-solid fa-heart"></i>
-					<i class="fa-solid fa-plus"></i>
 				</div>
+
+
+
 
 			</div>
 
-			<div class="songs-background color-white margin">
-				<div class="number inline-block">07</div>
-				<img class="song-wallpaper inline-block" src="https://w0.peakpx.com/wallpaper/435/69/HD-wallpaper-a-sky-full-of-stars-black-coldplay-dark-galaxy-hate-love-phone-romantic-stars-valentine.jpg" alt="song-wallpaper">
+
+			<div class="recent color-white">
+				<img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+					alt="song-wallpaper">
 				<div class="song-name inline-block">
-					<span>&ensp;A sky full of stars</span><br>
-					<span>&ensp;Ghost Stories</span>
+					<span>&ensp;Not Afraid</span><br>
+					<span>&ensp;Hits June 10</span>
 				</div>
 
-				 <div class="heart-add-icon">
+
+				<div class="heart-add-icon2">
 					<i class="fa-solid fa-heart"></i>
-					<i class="fa-solid fa-plus"></i>
 				</div>
+
+
+
 
 			</div>
 
-			<div class="songs-background color-white margin">
-				<div class="number inline-block">08</div>
-				<img class="song-wallpaper inline-block" src="https://i1.sndcdn.com/artworks-000126172960-u72sek-t500x500.jpg" alt="song-wallpaper">
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+					alt="song-wallpaper">
 				<div class="song-name inline-block">
-					<span>&ensp;Sparks</span><br>
-					<span>&ensp;Parachutes</span>
+					<span>&ensp;Godzilla</span><br>
+					<span>&ensp;Music To Be...</span>
 				</div>
 
-				 <div class="heart-add-icon">
+
+				<div class="heart-add-icon2">
 					<i class="fa-solid fa-heart"></i>
-					<i class="fa-solid fa-plus"></i>
 				</div>
+
+
+
 
 			</div>
 
-			<div class="songs-background color-white margin">
-				<div class="number inline-block">09</div>
-				<img class="song-wallpaper inline-block" src="https://i1.sndcdn.com/artworks-e6fCSbBkPv1n-0-t500x500.jpg" alt="song-wallpaper">
+			<div class="recent color-white">
+
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+					alt="song-wallpaper">
 				<div class="song-name inline-block">
-					<span>&ensp;Trouble</span><br>
-					<span>&ensp;Live 2003</span>
+					<span>&ensp;Venom</span><br>
+					<span>&ensp;Kamikaze</span>
 				</div>
 
-				 <div class="heart-add-icon">
+
+				<div class="heart-add-icon2">
 					<i class="fa-solid fa-heart"></i>
-					<i class="fa-solid fa-plus"></i>
 				</div>
+
+
+
 
 			</div>
 
-			<div class="songs-background color-white margin">
-				<div class="number inline-block">10</div>
-				<img class="song-wallpaper inline-block" src="https://images-na.ssl-images-amazon.com/images/I/811tle6v7MS.jpg" alt="song-wallpaper">
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+					alt="song-wallpaper">
 				<div class="song-name inline-block">
-					<span>&ensp;Daddy</span><br>
-					<span>&ensp;Everyday Life</span>
+					<span>&ensp;Till&nbsp;I&nbsp;Collapse</span><br>
+					<span>&ensp;The Eminem...</span>
 				</div>
 
-				 <div class="heart-add-icon">
+
+				<div class="heart-add-icon2">
 					<i class="fa-solid fa-heart"></i>
-					<i class="fa-solid fa-plus"></i>
 				</div>
+
+
+
 
 			</div>
 
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Not Afraid</span><br>
+					<span>&ensp;Hits June 10</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Godzilla</span><br>
+					<span>&ensp;Music&nbsp;To&nbsp;Be...</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Venom</span><br>
+					<span>&ensp;Kamikaze</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+			</div>
+
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Venom</span><br>
+					<span>&ensp;Kamikaze</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Till I Collapse</span><br>
+					<span>&ensp;The&nbsp;Eminem...</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="recent color-white">
+				<img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Not Afraid</span><br>
+					<span>&ensp;Hits June 10</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Godzilla</span><br>
+					<span>&ensp;Music To Be...</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Venom</span><br>
+					<span>&ensp;Kamikaze</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Till&nbsp;I&nbsp;Collapse</span><br>
+					<span>&ensp;The Eminem...</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Not Afraid</span><br>
+					<span>&ensp;Hits June 10</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Godzilla</span><br>
+					<span>&ensp;Music&nbsp;To&nbsp;Be...</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
+
+			<div class="recent color-white">
+
+				<img class="song-wallpaper inline-block"
+					src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+					alt="song-wallpaper">
+				<div class="song-name inline-block">
+					<span>&ensp;Mirage</span><br>
+					<span>&ensp;Else</span>
+				</div>
+
+
+				<div class="heart-add-icon2">
+					<i class="fa-solid fa-heart"></i>
+				</div>
+
+
+
+
+			</div>
 
 
 
 		</div>
 
-	
 
-	</main>
-
-		<aside class="inline-block" >
-
-           
-  			<h1 class="color-white">
-				Similar Artists
-			</h1>
-            
-            <div class="similar-artists" class="color-white">
-            	<img src="https://i.scdn.co/image/ab67706f000000035324fd190d03c6f3160c9bc8" alt="wallpaper">
-            	<div>
-	            	<p class="color-white">Imagine Dragons</p>
-	            	<p class="color-white">pop band </p>
-               </div>
-
-            </div>
+	</aside>
 
 
-            <div class="similar-artists" class="color-white">
-            	<img src="https://i.scdn.co/image/ab67706f000000035324fd190d03c6f3160c9bc8" alt="wallpaper">
-            	<div>
-	            	<p class="color-white">Imagine Dragons</p>
-	            	<p class="color-white">pop band </p>
-               </div>
-
-
-            </div>
-
-
-            <div class="similar-artists" class="color-white">
-            	<img src="https://i.scdn.co/image/ab67706f000000035324fd190d03c6f3160c9bc8" alt="wallpaper">
-            	<div>
-	            	<p class="color-white">Imagine Dragons</p>
-	            	<p class="color-white">pop band </p>
-               </div>
-            </div>
-
-            <br><br>
-
-            <h1 class="color-white">
-            	Recently Played
-            </h1>
-
-            <div class="recently-played color-white">
-
-            	<div class="number inline-block">01</div>
-				<img class="song-wallpaper inline-block" src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg" alt="song-wallpaper">
-				<div class="song-name inline-block">
-					<span>&ensp;Mirage</span><br>
-					<span>&ensp;Else</span>
-				</div>
-
-
-                <div class="heart-add-icon2">
-					<i class="fa-solid fa-heart"></i>
-				</div>
-
-
-
-
-            </div>
-
-
-            <div class="recently-played color-white">
-            	<div class="number inline-block">02</div>
-				<img class="song-wallpaper inline-block" src="https://is3-ssl.mzstatic.com/image/thumb/Features115/v4/b1/43/12/b1431226-c515-38a0-e3d7-fd0b4a377c9a/pr_source.png/375x375bb.jpg" alt="song-wallpaper">
-				<div class="song-name inline-block">
-					<span>&ensp;Worry about us</span><br>
-					<span>&ensp;Rosie Lowe</span>
-				</div>
-
-				<div class="heart-add-icon2">
-					<i class="fa-solid fa-heart"></i>
-				</div>
-
-
-
-            </div>
-
-
-            <div class="recently-played color-white">
-            	<div class="number inline-block">03</div>
-				<img class="song-wallpaper inline-block" src="https://i1.sndcdn.com/artworks-000126172960-u72sek-t500x500.jpg" alt="song-wallpaper">
-				<div class="song-name inline-block">
-					<span>&ensp;Sparks</span><br>
-					<span>&ensp;Parachutes</span>
-				</div>
-
-				<div class="heart-add-icon2">
-					<i class="fa-solid fa-heart"></i>
-				</div>
-
-
-
-            	
-            </div>
-
-            <div class="recently-played color-white">
-            	<div class="number inline-block">04</div>
-				<img class="song-wallpaper inline-block" src="https://images-na.ssl-images-amazon.com/images/I/811tle6v7MS.jpg" alt="song-wallpaper">
-				<div class="song-name inline-block">
-					<span>&ensp;Daddy</span><br>
-					<span>&ensp;Everyday Life</span>
-				</div>
-
-				<div class="heart-add-icon2">
-					<i class="fa-solid fa-heart"></i>
-				</div>
-
-
-            	
-            </div>
-
-            <div class="recently-played color-white">
-
-            	<div class="number inline-block">05</div>
-				<img class="song-wallpaper inline-block" src="https://w0.peakpx.com/wallpaper/435/69/HD-wallpaper-a-sky-full-of-stars-black-coldplay-dark-galaxy-hate-love-phone-romantic-stars-valentine.jpg" alt="song-wallpaper">
-				<div class="song-name inline-block">
-					<span>&ensp;A sky full of stars</span><br>
-					<span>&ensp;Ghost Stories</span>
-				</div>
-
-				<div class="heart-add-icon2">
-					<i class="fa-solid fa-heart"></i>
-				</div>
-
-
-            	
-            </div>
-
-
-
-
-
-
-
-
-
-		</aside>
-
-
-		<div id="music-player">
-
-       <section id="buttons">
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Imagine_Dragons%2C_Roundhouse%2C_London_%2835390234536%29.jpg/1200px-Imagine_Dragons%2C_Roundhouse%2C_London_%2835390234536%29.jpg">
-			<p class="color-white">Imagine By John</p>
-			<i class="fa-solid fa-heart"></i>
-
-			<i class="fa-solid fa-backward"></i>
-
-			<i class="fa-solid fa-play"></i>
-
-			<i class="fa-solid fa-forward"></i>
-
-		
-			
-			<i id="vol-icon" class="fa-solid fa-volume-high"></i>
-			<div id="volume-container">
-				<div id="volume">
-				</div>
-			</div>
-
-		<section>
-
-
-		<br>
+	<div id="play-container">
 
 		<div id="play-bar-container">
 			<div id="play-bar">
@@ -427,14 +2381,125 @@
 		</div>
 
 
+		<div id="other-items-container">
+
+
+
+			<div id="current-song">
+				<img
+					src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Imagine_Dragons%2C_Roundhouse%2C_London_%2835390234536%29.jpg/1200px-Imagine_Dragons%2C_Roundhouse%2C_London_%2835390234536%29.jpg">
+				<div>
+					<p>Imagine&nbsp;(Made&nbsp;Popular&nbsp;By...</p>
+					<p>Party&nbsp;Tyme&nbsp;Karaoke&nbsp;-&nbsp;Party&nbsp;Ty...</p>
+
+				</div>
+
+				<i class="fa-solid fa-heart"></i>
+
+
+
+				<!-- <div class="like-container">
+	
+					   
+					</div> -->
+
+
+
+			</div>
+
+
+
+
+			<div id="buttons">
+
+				<i class="fa-solid fa-shuffle"></i>
+
+				<i class="fa-solid fa-backward-step"></i>
+
+
+				<div class="circle-container">
+					<!-- <i class="fa-solid fa-play"></i> -->
+					<i class="fa-solid fa-music fa-spin fa-spin-reverse"></i>
+
+
+				</div>
+
+
+				<i class="fa-solid fa-forward-step"></i>
+
+				<i class="fa-sharp fa-solid fa-repeat"></i>
+
+			</div>
+
+
+
+
+
+			<div id="download-duration-volume-playlist-container">
+
+
+				<div id="download">
+					<i class="fa-solid fa-circle-down"></i>
+				</div>
+
+				<div id="duration">03:12&nbsp;/&nbsp;06:44</div>
+
+
+				<div id="volume">
+
+
+					<i id="vol-icon" class="fa-solid fa-volume-high"></i>
+
+					<div id="volume-bar-container">
+
+						<div id="volume-bar">
+
+							<div id="end">.</div>
+							<div id="volume-percent"></div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div id="playlist">
+					<a href="#"> <i class="fa-solid fa-list"></i></a>
+
+
+				</div>
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+		</div>
 
 
 	</div>
 
+
+	<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+		crossorigin="anonymous"></script>
 
 
 
 
 
 </body>
+
 </html>

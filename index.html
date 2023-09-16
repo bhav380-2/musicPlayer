@@ -1,4 +1,3 @@
-M
 <!DOCTYPE html>
 <html>
 
@@ -7,397 +6,3363 @@ M
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+
+
     <script src="https://kit.fontawesome.com/1505e6fedb.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./my2.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" type="text/css" href="./index.css">
+    <link rel="stylesheet" href="text/ccss" href="./carousel.scss">
 </head>
 
 <body>
+    <!-- 
+    <div class="container-fluid" >
+        <a class="navbar-brand" href="#">
 
-    <div id="logo-for-mobileDevice" style="margin:3%">
+          <div id="music-logo">
+              <i class="fa-solid fa-music fa-fade"></i>
+              <span >Music</span>
+          </
+       </a>
 
-        <i id="logo-x" style="color:white;font-size:4vw" class="fa-solid fa-user-ninja"></i>
-        <span class="logo-names">
-	     		<span class="color-white"><h3>Bhawesh <br>Studio</h3></span>
-        </span>
+          </div> -->
 
-    </div>
+    <!-- id="music-player-navbar"  -->
+    <!-- class="navbar bg-dark border-bottom border-bottom-dark navbar-expand-lg mb-4" data-bs-theme="dark" -->
 
-    <div id="ninja-music-logo">
-        <div id="logo-y">
-            <img src="./images/ninja.png" alt="ninja muscic logo">
+
+    <nav style="z-index:1; background-color: rgba(0, 0, 0, 0.961);"
+        class="navbar border-bottom border-bottom-dark navbar-expand-lg mb-4" data-bs-theme="dark">
+
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+
+                <div id="music-logo">
+                    <i class="fa-solid fa-headphones"></i> <span>Music</span>
+                </div>
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
         </div>
+    </nav>
 
-        <div class="logo-names">
-            <span><h3>Bhawesh <br>Studio</h3></span>
-        </div>
 
-        <div id="favourites">
-            <a href="#"> Favourites</a>
-        </div>
 
-        <div id="search-bar">
-
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
-            <input type="text" placeholder="Search..." name="search">
-        </div>
-
-        <div id="notifications">
-            <a href=""><i class="fa-solid fa-bell"></i></a>
-        </div>
-
-        <div id="profile">
-
-            <img src="./images/bhawesh.JPG">
-
-        </div>
-
-        </section>
-
-    </div>
-
-    </header>
 
     <main>
 
-        <div id="cards">
-            <img src="https://external-preview.redd.it/cGbe-9rL5aBdxvhW1QUWgULU2iwz7-IoShCKTpJC0j0.jpg?auto=webp&s=608bfd87e98f8bca05efee2d7f36a3656b885244">
-            <img src="https://i.pinimg.com/originals/83/66/81/8366810777af1c14f0dbaa7a77f88416.jpg">
-            <img src="https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699">
-        </div>
+        <div id="flex-container">
 
 
-        <div id="latest-release-container">
+            <div id="carousel" ver="document.body.style.overflow='hidden';"
+                onmuseout="document.body.style.overflow='auto';">
+                <div class="menu">
+                    <div class="menu--wrapper">
+                        <div class="menu--item">
+                            <figure>
+                                <img src="https://bodyartguru.com/wp-content/uploads/2019/04/Travis-Scott-.jpg">
 
-            <h2 class="color-white"> Latest Release</h2>
 
-            <div id="latest-release">
+                            </figure>
+                        </div>
 
-                <div class="latest-songs color-grey">
+                        <div class="menu--item">
+                            <figure> <img
+                                    src="https://external-preview.redd.it/cGbe-9rL5aBdxvhW1QUWgULU2iwz7-IoShCKTpJC0j0.jpg?auto=webp&s=608bfd87e98f8bca05efee2d7f36a3656b885244">
+                            </figure>
+                        </div>
 
-                    <img src="https://e.snmc.io/i/600/s/cc3a9785c97ac17958fe0f6d47904f81/9858066/prateek-kuhad-the-way-that-lovers-do-Cover-Art.jpg" alt="song-wallpaper">
+                        <div class="menu--item">
+                            <figure> <img
+                                    src="https://th.bing.com/th/id/OIP.CcoDBimjo2VcdcViBy440AAAAA?pid=ImgDet&rs=1">
+                            </figure>
+                        </div>
 
-                    <div class="song-details">
-                        <span>All I Need</span><br>
-                        <span>20 May,2022</span>
-                        <span class="time">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2:34</span>
+                        <div class="menu--item">
+                            <figure>
+                                <img src="https://www.thefamouspeople.com/profiles/images/kendrick-lamar-8.jpg">
+
+
+                            </figure>
+                        </div>
+
+                        <div class="menu--item">
+                            <figure> <img src="https://ksassets.timeincuk.net/wp/uploads/sites/55/2018/10/MGK.jpg">
+                            </figure>
+                        </div>
+
+                        <div class="menu--item">
+                            <figure> <img
+                                    src="https://i.pinimg.com/originals/83/66/81/8366810777af1c14f0dbaa7a77f88416.jpg">
+                            </figure>
+                        </div>
+
+                        <div class="menu--item">
+                            <figure> <img
+                                    src="https://images.businessoffashion.com/arc-prod-images/FMMJGJG66NFCVI7IEAYSGHN25U">
+                            </figure>
+                        </div>
+
                     </div>
+
                 </div>
-
-
-                <div class="latest-songs color-grey">
-
-                    <img src="https://naijahotstars.com/wp-content/uploads/2022/06/Chris-Brown-ft-Wizkid-%E2%80%93-Call-Me-Everyday-Naijahotstars.jpg" alt="song-wallpaper">
-
-                    <div class="song-details">
-                        <span>Call Me Everyday</span><br>
-                        <span> 18 May,2022</span>
-                        <span class="time">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 3:34</span>
-                    </div>
-                </div>
-                <div class="latest-songs color-grey">
-
-                    <img src="https://i.scdn.co/image/ab67616d0000b273ac8c3be850377baae05da4ed" alt="song-wallpaper">
-
-                    <div class="song-details">
-                        <span>Somebody Like You</span><br>
-                        <span>1 February,2022</span>
-                        <span class="time">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 3:12</span>
-                    </div>
-                </div>
-
-                <div class="latest-songs color-grey">
-
-                    <img src="https://i.ytimg.com/vi/rEXUQpffn2k/maxresdefault.jpg?v=62ace7a9" alt="song-wallpaper">
-
-                    <div class="song-details">
-                        <span>Don't you Worry</span><br>
-                        <span>2 March,2022</span>
-                        <span class="time">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 3:24</span>
-                    </div>
-                </div>
-
-                <div class="latest-songs color-grey">
-
-                    <img src="https://images.genius.com/f0dd1d90842619395ac0c0dc42a7e835.1000x1000x1.jpg" alt="song-wallpaper">
-
-                    <div class="song-details">
-                        <span>Numb</span><br>
-                        <span>20 jan,2022</span>
-                        <span class="time">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2:35</span>
-                    </div>
-                </div>
-
-                <div class="latest-songs color-grey">
-
-                    <img src="https://i.ytimg.com/vi/WABOrIYhR94/maxresdefault.jpg" alt="song-wallpaper">
-
-                    <div class="song-details">
-                        <span>Cooped Up</span><br>
-                        <span>2 May,2022</span>
-                        <span class="time">&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 2:06</span>
-                    </div>
-                </div>
-
-
-
 
 
             </div>
 
 
-        </div>
-
-        <div id="popular-artists-container">
-
-            <h2 class="color-white"> Popular Artists</h2><br>
-
-            <div class="popular-artist">
-
-
-                <a class="artist" href="./index2.html">
-                    <img class="artist-image" src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg " alt="artist-image">
-                    <p>ColdPlay </p>
-
-                </a>
-
-
-                <a class="artist" href="./index2.html">
-                    <img class="artist-image" src="https://lh3.googleusercontent.com/jQoBIAS6JjFGpcqQY1M_Mh3AasOvFENCdVRxkgax1a0K6qiq7AgE3MbJ6Jtt-Jndcarvoawmrg66KTny=w2880-h1200-p-l90-rj " alt="artist-image">
-                    <p> Ed Sheeran</p>
-
-                </a>
 
 
 
-                <a class="artist" href="./index2.html">
-                    <img class="artist-image" src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg" alt="artist-image">
-                    <p>Zayn </p>
 
-                </a>
+            <!-- <div id="carousel">
+
+                        <div>
+                            <img
+                                src="https://external-preview.redd.it/cGbe-9rL5aBdxvhW1QUWgULU2iwz7-IoShCKTpJC0j0.jpg?auto=webp&s=608bfd87e98f8bca05efee2d7f36a3656b885244">
+                        </div>
+
+                        <div>
+                            <img src="https://i.pinimg.com/originals/83/66/81/8366810777af1c14f0dbaa7a77f88416.jpg">
+                        </div>
+
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699">
+                        </div>
+                        <div>
+                            <img
+                                src="https://external-preview.redd.it/cGbe-9rL5aBdxvhW1QUWgULU2iwz7-IoShCKTpJC0j0.jpg?auto=webp&s=608bfd87e98f8bca05efee2d7f36a3656b885244">
+                        </div>
+
+                        <div>
+                            <img src="https://i.pinimg.com/originals/83/66/81/8366810777af1c14f0dbaa7a77f88416.jpg">
+                        </div>
+
+                        <div>
+                            <img src="https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699">
+                        </div>
+
+                    </div> -->
 
 
 
-                <a class="artist" href="./index2.html">
-                    <img class="artist-image" src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/eminem-010722_ulrgjwidf8qm15eqgxbjoxdln.jpg?itok=BCEj0nYG " alt="artist-image">
-                    <p> Eminem</p>
 
-                </a>
+            <div class="headings"> Latest Release</div>
 
 
+            <div id="latest-release-container">
 
-                <a class="artist" href="./index2.html">
-                    <img class="artist-image" src="https://media.gq.com/photos/61e1d9cdbcfa2fbd532630f0/master/pass/1134174738 " alt="artist-image">
-                    <p> Kendrick</p>
 
-                </a>
+
+                <div id="latest-release">
+
+                    <div class="latest-songs color-grey">
+
+
+                        <img src="https://i.scdn.co/image/ab67616d0000b273b675341128c32a23e236243a"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+
+
+                            <div class="name">
+                                <span>All I Need</span><br>
+                                <span>20 May,2022</span>
+
+                            </div>
+
+
+                            <span class="time">2:34</span>
+                        </div>
+                    </div>
+
+
+                    <div class="latest-songs color-grey">
+
+
+                        <img src="https://naijahotstars.com/wp-content/uploads/2022/06/Chris-Brown-ft-Wizkid-%E2%80%93-Call-Me-Everyday-Naijahotstars.jpg"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Somebody Like You</span><br>
+                                <span>1 February,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 3:34</span>
+                        </div>
+                    </div>
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.scdn.co/image/ab67616d0000b273ac8c3be850377baae05da4ed"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Somebody Like You</span><br>
+                                <span>1 February,2022</span>
+
+
+                            </div>
+
+                            <span class="time">12</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.ytimg.com/vi/rEXUQpffn2k/maxresdefault.jpg?v=62ace7a9" alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Don't you Worry</span><br>
+                                <span>2 March,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 3:24</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://images.genius.com/f0dd1d90842619395ac0c0dc42a7e835.1000x1000x1.jpg"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Numb</span><br>
+                                <span>20 jan,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 2:35</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.ytimg.com/vi/WABOrIYhR94/maxresdefault.jpg" alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Cooped Up</span><br>
+                                <span>2 May,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 2:06</span>
+                        </div>
+                    </div>
+
+
+                    <div class="latest-songs color-grey">
+
+
+                        <img src="https://i.scdn.co/image/ab67616d0000b273b675341128c32a23e236243a"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+
+
+                            <div class="name">
+                                <span>All I Need</span><br>
+                                <span>20 May,2022</span>
+
+                            </div>
+
+
+                            <span class="time">2:34</span>
+                        </div>
+                    </div>
+
+
+                    <div class="latest-songs color-grey">
+
+
+                        <img src="https://naijahotstars.com/wp-content/uploads/2022/06/Chris-Brown-ft-Wizkid-%E2%80%93-Call-Me-Everyday-Naijahotstars.jpg"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Somebody Like You</span><br>
+                                <span>1 February,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 3:34</span>
+                        </div>
+                    </div>
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.scdn.co/image/ab67616d0000b273ac8c3be850377baae05da4ed"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Somebody Like You</span><br>
+                                <span>1 February,2022</span>
+
+
+                            </div>
+
+                            <span class="time">12</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.ytimg.com/vi/rEXUQpffn2k/maxresdefault.jpg?v=62ace7a9" alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Don't you Worry</span><br>
+                                <span>2 March,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 3:24</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://images.genius.com/f0dd1d90842619395ac0c0dc42a7e835.1000x1000x1.jpg"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Numb</span><br>
+                                <span>20 jan,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 2:35</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.ytimg.com/vi/WABOrIYhR94/maxresdefault.jpg" alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Cooped Up</span><br>
+                                <span>2 May,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 2:06</span>
+                        </div>
+                    </div>
+
+
+                    <div class="latest-songs color-grey">
+
+
+                        <img src="https://i.scdn.co/image/ab67616d0000b273b675341128c32a23e236243a"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+
+
+                            <div class="name">
+                                <span>All I Need</span><br>
+                                <span>20 May,2022</span>
+
+                            </div>
+
+
+                            <span class="time">2:34</span>
+                        </div>
+                    </div>
+
+
+                    <div class="latest-songs color-grey">
+
+
+                        <img src="https://naijahotstars.com/wp-content/uploads/2022/06/Chris-Brown-ft-Wizkid-%E2%80%93-Call-Me-Everyday-Naijahotstars.jpg"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Somebody Like You</span><br>
+                                <span>1 February,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 3:34</span>
+                        </div>
+                    </div>
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.scdn.co/image/ab67616d0000b273ac8c3be850377baae05da4ed"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Somebody Like You</span><br>
+                                <span>1 February,2022</span>
+
+
+                            </div>
+
+                            <span class="time">12</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.ytimg.com/vi/rEXUQpffn2k/maxresdefault.jpg?v=62ace7a9" alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Don't you Worry</span><br>
+                                <span>2 March,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 3:24</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://images.genius.com/f0dd1d90842619395ac0c0dc42a7e835.1000x1000x1.jpg"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Numb</span><br>
+                                <span>20 jan,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 2:35</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.ytimg.com/vi/WABOrIYhR94/maxresdefault.jpg" alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Cooped Up</span><br>
+                                <span>2 May,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 2:06</span>
+                        </div>
+                    </div>
+
+
+                    <div class="latest-songs color-grey">
+
+
+                        <img src="https://i.scdn.co/image/ab67616d0000b273b675341128c32a23e236243a"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+
+
+                            <div class="name">
+                                <span>All I Need</span><br>
+                                <span>20 May,2022</span>
+
+                            </div>
+
+
+                            <span class="time">2:34</span>
+                        </div>
+                    </div>
+
+
+                    <div class="latest-songs color-grey">
+
+
+                        <img src="https://naijahotstars.com/wp-content/uploads/2022/06/Chris-Brown-ft-Wizkid-%E2%80%93-Call-Me-Everyday-Naijahotstars.jpg"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Somebody Like You</span><br>
+                                <span>1 February,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 3:34</span>
+                        </div>
+                    </div>
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.scdn.co/image/ab67616d0000b273ac8c3be850377baae05da4ed"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Somebody Like You</span><br>
+                                <span>1 February,2022</span>
+
+
+                            </div>
+
+                            <span class="time">12</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.ytimg.com/vi/rEXUQpffn2k/maxresdefault.jpg?v=62ace7a9" alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Don't you Worry</span><br>
+                                <span>2 March,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 3:24</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://images.genius.com/f0dd1d90842619395ac0c0dc42a7e835.1000x1000x1.jpg"
+                            alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Numb</span><br>
+                                <span>20 jan,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 2:35</span>
+                        </div>
+                    </div>
+
+                    <div class="latest-songs color-grey">
+
+                        <img src="https://i.ytimg.com/vi/WABOrIYhR94/maxresdefault.jpg" alt="song-wallpaper">
+
+                        <div class="song-details">
+                            <div class="name">
+                                <span>Cooped Up</span><br>
+                                <span>2 May,2022</span>
+
+
+                            </div>
+
+                            <span class="time"> 2:06</span>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+
 
             </div>
 
-        </div>
+
+            <div class="headings"> Popular Artists</div><br>
+            <div id="popular-artists-container">
+
+
+                <div class="popular-artist">
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg "
+                            alt="artist-image">
+                        <p>ColdPlay </p>
+
+                    </a>
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://lh3.googleusercontent.com/jQoBIAS6JjFGpcqQY1M_Mh3AasOvFENCdVRxkgax1a0K6qiq7AgE3MbJ6Jtt-Jndcarvoawmrg66KTny=w2880-h1200-p-l90-rj "
+                            alt="artist-image">
+                        <p> Ed Sheeran</p>
+
+                    </a>
 
 
 
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg"
+                            alt="artist-image">
+                        <p>Zayn </p>
+
+                    </a>
 
 
-        <div class="music-themes">
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/eminem-010722_ulrgjwidf8qm15eqgxbjoxdln.jpg?itok=BCEj0nYG "
+                            alt="artist-image">
+                        <p> Eminem</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://media.gq.com/photos/61e1d9cdbcfa2fbd532630f0/master/pass/1134174738 "
+                            alt="artist-image">
+                        <p> Kendrick</p>
+
+                    </a>
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg "
+                            alt="artist-image">
+                        <p>ColdPlay </p>
+
+                    </a>
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://lh3.googleusercontent.com/jQoBIAS6JjFGpcqQY1M_Mh3AasOvFENCdVRxkgax1a0K6qiq7AgE3MbJ6Jtt-Jndcarvoawmrg66KTny=w2880-h1200-p-l90-rj "
+                            alt="artist-image">
+                        <p> Ed Sheeran</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg"
+                            alt="artist-image">
+                        <p>Zayn </p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/eminem-010722_ulrgjwidf8qm15eqgxbjoxdln.jpg?itok=BCEj0nYG "
+                            alt="artist-image">
+                        <p> Eminem</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://media.gq.com/photos/61e1d9cdbcfa2fbd532630f0/master/pass/1134174738 "
+                            alt="artist-image">
+                        <p> Kendrick</p>
+
+                    </a>
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg "
+                            alt="artist-image">
+                        <p>ColdPlay </p>
+
+                    </a>
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://lh3.googleusercontent.com/jQoBIAS6JjFGpcqQY1M_Mh3AasOvFENCdVRxkgax1a0K6qiq7AgE3MbJ6Jtt-Jndcarvoawmrg66KTny=w2880-h1200-p-l90-rj "
+                            alt="artist-image">
+                        <p> Ed Sheeran</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg"
+                            alt="artist-image">
+                        <p>Zayn </p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/eminem-010722_ulrgjwidf8qm15eqgxbjoxdln.jpg?itok=BCEj0nYG "
+                            alt="artist-image">
+                        <p> Eminem</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://media.gq.com/photos/61e1d9cdbcfa2fbd532630f0/master/pass/1134174738 "
+                            alt="artist-image">
+                        <p> Kendrick</p>
+
+                    </a>
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg "
+                            alt="artist-image">
+                        <p>ColdPlay </p>
+
+                    </a>
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://lh3.googleusercontent.com/jQoBIAS6JjFGpcqQY1M_Mh3AasOvFENCdVRxkgax1a0K6qiq7AgE3MbJ6Jtt-Jndcarvoawmrg66KTny=w2880-h1200-p-l90-rj "
+                            alt="artist-image">
+                        <p> Ed Sheeran</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg"
+                            alt="artist-image">
+                        <p>Zayn </p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/eminem-010722_ulrgjwidf8qm15eqgxbjoxdln.jpg?itok=BCEj0nYG "
+                            alt="artist-image">
+                        <p> Eminem</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://media.gq.com/photos/61e1d9cdbcfa2fbd532630f0/master/pass/1134174738 "
+                            alt="artist-image">
+                        <p> Kendrick</p>
+
+                    </a>
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg "
+                            alt="artist-image">
+                        <p>ColdPlay </p>
+
+                    </a>
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://lh3.googleusercontent.com/jQoBIAS6JjFGpcqQY1M_Mh3AasOvFENCdVRxkgax1a0K6qiq7AgE3MbJ6Jtt-Jndcarvoawmrg66KTny=w2880-h1200-p-l90-rj "
+                            alt="artist-image">
+                        <p> Ed Sheeran</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg"
+                            alt="artist-image">
+                        <p>Zayn </p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/eminem-010722_ulrgjwidf8qm15eqgxbjoxdln.jpg?itok=BCEj0nYG "
+                            alt="artist-image">
+                        <p> Eminem</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://media.gq.com/photos/61e1d9cdbcfa2fbd532630f0/master/pass/1134174738 "
+                            alt="artist-image">
+                        <p> Kendrick</p>
+
+                    </a>
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg "
+                            alt="artist-image">
+                        <p>ColdPlay </p>
+
+                    </a>
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://lh3.googleusercontent.com/jQoBIAS6JjFGpcqQY1M_Mh3AasOvFENCdVRxkgax1a0K6qiq7AgE3MbJ6Jtt-Jndcarvoawmrg66KTny=w2880-h1200-p-l90-rj "
+                            alt="artist-image">
+                        <p> Ed Sheeran</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg"
+                            alt="artist-image">
+                        <p>Zayn </p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/eminem-010722_ulrgjwidf8qm15eqgxbjoxdln.jpg?itok=BCEj0nYG "
+                            alt="artist-image">
+                        <p> Eminem</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://media.gq.com/photos/61e1d9cdbcfa2fbd532630f0/master/pass/1134174738 "
+                            alt="artist-image">
+                        <p> Kendrick</p>
+
+                    </a>
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg "
+                            alt="artist-image">
+                        <p>ColdPlay </p>
+
+                    </a>
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://lh3.googleusercontent.com/jQoBIAS6JjFGpcqQY1M_Mh3AasOvFENCdVRxkgax1a0K6qiq7AgE3MbJ6Jtt-Jndcarvoawmrg66KTny=w2880-h1200-p-l90-rj "
+                            alt="artist-image">
+                        <p> Ed Sheeran</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg"
+                            alt="artist-image">
+                        <p>Zayn </p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/eminem-010722_ulrgjwidf8qm15eqgxbjoxdln.jpg?itok=BCEj0nYG "
+                            alt="artist-image">
+                        <p> Eminem</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://media.gq.com/photos/61e1d9cdbcfa2fbd532630f0/master/pass/1134174738 "
+                            alt="artist-image">
+                        <p> Kendrick</p>
+
+                    </a>
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://imgnew.outlookindia.com/public/uploads/articles/2021/10/16/a735f54d15c64fa3f4e78f2a88f7aa0b--chris-martin-coldplay-band-photos_adobespark.jpg "
+                            alt="artist-image">
+                        <p>ColdPlay </p>
+
+                    </a>
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://lh3.googleusercontent.com/jQoBIAS6JjFGpcqQY1M_Mh3AasOvFENCdVRxkgax1a0K6qiq7AgE3MbJ6Jtt-Jndcarvoawmrg66KTny=w2880-h1200-p-l90-rj "
+                            alt="artist-image">
+                        <p> Ed Sheeran</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://upload.wikimedia.org/wikipedia/commons/1/10/Zayn_Wiki_%28cropped%29.jpg"
+                            alt="artist-image">
+                        <p>Zayn </p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://library.sportingnews.com/styles/twitter_card_120x120/s3/2022-01/eminem-010722_ulrgjwidf8qm15eqgxbjoxdln.jpg?itok=BCEj0nYG "
+                            alt="artist-image">
+                        <p> Eminem</p>
+
+                    </a>
+
+
+
+                    <a class="artist" href="./index2.html">
+                        <img class="artist-image"
+                            src="https://media.gq.com/photos/61e1d9cdbcfa2fbd532630f0/master/pass/1134174738 "
+                            alt="artist-image">
+                        <p> Kendrick</p>
+
+                    </a>
+
+                </div>
+
+            </div>
 
             <div class="stations">
                 <div id="div1">
                     <div id="div2">
                         <div id="div3">
-                            <img src="https://www.digitalmusicnews.com/wp-content/uploads/2022/05/warner-music-spain-and-warner-chappell-music-unveil-the-music-station-in-madrid-article-1.jpg">
+                            <img
+                                src="https://www.digitalmusicnews.com/wp-content/uploads/2022/05/warner-music-spain-and-warner-chappell-music-unveil-the-music-station-in-madrid-article-1.jpg">
                             <p>Stations</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <br>
 
-            <div class="theme-main">
-                <div class="theme-content">
-                    <img src="https://www.wearetheguard.com/sites/default/files/best-chill-music-week-01-2019.jpg">
-                    <p>Vibe</p>
-                </div>
-                <div class="theme-content">
-                    <img src="https://yt3.ggpht.com/ytc/AKedOLRQUcHbXo5EwhJy8Pspsj4Mq6ZLGs-TRs1M2y5b=s900-c-k-c0x00ffffff-no-rj">
-                    <p>Rock</p>
-                </div>
-                <div class="theme-content">
-                    <img src="https://cdn3.vectorstock.com/i/1000x1000/97/42/i-love-music-concept-vector-2259742.jpg">
-                    <p>Love</p>
-                </div>
-                <div class="theme-content">
-                    <img src="https://i.ytimg.com/vi/0CWUFzbXVJg/maxresdefault.jpg">
-                    <p>Pop</p>
-                </div>
-                <div class="theme-content">
-                    <img src="https://cdn3.vectorstock.com/i/1000x1000/57/32/retro-music-design-vector-20075732.jpg">
-                    <p>Retro</p>
-                </div>
-                <div class="theme-content">
-                    <img src="https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2018/01/This-Type-of-Workout-Music-is-Best.jpg">
-                    <p>Sweat</p>
+            <div class="music-themes">
+
+
+
+
+                <div class="theme-main">
+
+                    <div class="theme-content">
+                        <div>
+                            <img
+                                src="https://www.wearetheguard.com/sites/default/files/best-chill-music-week-01-2019.jpg">
+                            <p>Vibe</p>
+                        </div>
+
+                    </div>
+                    <div class="theme-content">
+
+                        <div>
+                            <img
+                                src="https://yt3.ggpht.com/ytc/AKedOLRQUcHbXo5EwhJy8Pspsj4Mq6ZLGs-TRs1M2y5b=s900-c-k-c0x00ffffff-no-rj">
+                            <p>Rock</p>
+                        </div>
+
+
+
+
+                    </div>
+                    <div class="theme-content">
+                        <div>
+                            <img
+                                src="https://cdn3.vectorstock.com/i/1000x1000/97/42/i-love-music-concept-vector-2259742.jpg">
+                            <p>Love</p>
+                        </div>
+
+
+                    </div>
+                    <div class="theme-content">
+                        <div>
+                            <img src="https://i.ytimg.com/vi/0CWUFzbXVJg/maxresdefault.jpg">
+                            <p>Pop</p>
+                        </div>
+
+
+                    </div>
+                    <div class="theme-content">
+                        <div>
+                            <img
+                                src="https://cdn3.vectorstock.com/i/1000x1000/57/32/retro-music-design-vector-20075732.jpg">
+                            <p>Retro</p>
+                        </div>
+
+
+                    </div>
+                    <div class="theme-content">
+                        <div>
+                            <img
+                                src="https://d3h9ln6psucegz.cloudfront.net/wp-content/uploads/2018/01/This-Type-of-Workout-Music-is-Best.jpg">
+                            <p>Sweat</p>
+                        </div>
+
+
+                    </div>
                 </div>
             </div>
+
+            <div class="music-theme2">
+                <div class="outer-div">
+                    <div class="inner-div">
+                        <span> Party</span>
+
+                    </div>
+                </div>
+
+
+                <div class="outer-div">
+                    <div class="inner-div">
+
+                        <span> Electronic</span>
+
+                    </div>
+                </div>
+
+                <div class="outer-div">
+                    <div class="inner-div">
+                        <span> Travel</span>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Latest English Songs -->
+            <div class="headings" "> Latest English </div>
+            <div class=" latest-songs-container">
+
+
+
+                <div class="latest-songs2">
+
+                    <div>
+                        <img src="https://media.pitchfork.com/photos/62b5bc073d678e5fd43bd6e1/2:1/w_2560%2Cc_limit/Eminem-Snoop-Dogg-2022-Bored-Ape-NFT.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>From The D 2 The LBC</div>
+                            <div>25 June, 2022 </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273e1b6a49e03e13939383c1e6c"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hello World</div>
+                            <div>4 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.the-rhythm.com/sites/g/files/g2000009916/files/2022-03/omah_lay_justin_bieber.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Attention</div>
+                            <div>26 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://www.billboard.com/wp-content/uploads/2022/05/onerepublic-i-aint-worried-top-gun-music-video-2022-billboard-1548.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>I Ain't Worried</div>
+                            <div>6 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://media.pitchfork.com/photos/62b5bc073d678e5fd43bd6e1/2:1/w_2560%2Cc_limit/Eminem-Snoop-Dogg-2022-Bored-Ape-NFT.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>From The D 2 The LBC</div>
+                            <div>25 June, 2022 </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273e1b6a49e03e13939383c1e6c"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hello World</div>
+                            <div>4 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.the-rhythm.com/sites/g/files/g2000009916/files/2022-03/omah_lay_justin_bieber.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Attention</div>
+                            <div>26 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://www.billboard.com/wp-content/uploads/2022/05/onerepublic-i-aint-worried-top-gun-music-video-2022-billboard-1548.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>I Ain't Worried</div>
+                            <div>6 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://media.pitchfork.com/photos/62b5bc073d678e5fd43bd6e1/2:1/w_2560%2Cc_limit/Eminem-Snoop-Dogg-2022-Bored-Ape-NFT.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>From The D 2 The LBC</div>
+                            <div>25 June, 2022 </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273e1b6a49e03e13939383c1e6c"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hello World</div>
+                            <div>4 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.the-rhythm.com/sites/g/files/g2000009916/files/2022-03/omah_lay_justin_bieber.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Attention</div>
+                            <div>26 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://www.billboard.com/wp-content/uploads/2022/05/onerepublic-i-aint-worried-top-gun-music-video-2022-billboard-1548.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>I Ain't Worried</div>
+                            <div>6 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://media.pitchfork.com/photos/62b5bc073d678e5fd43bd6e1/2:1/w_2560%2Cc_limit/Eminem-Snoop-Dogg-2022-Bored-Ape-NFT.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>From The D 2 The LBC</div>
+                            <div>25 June, 2022 </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273e1b6a49e03e13939383c1e6c"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hello World</div>
+                            <div>4 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.the-rhythm.com/sites/g/files/g2000009916/files/2022-03/omah_lay_justin_bieber.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Attention</div>
+                            <div>26 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://www.billboard.com/wp-content/uploads/2022/05/onerepublic-i-aint-worried-top-gun-music-video-2022-billboard-1548.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>I Ain't Worried</div>
+                            <div>6 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://media.pitchfork.com/photos/62b5bc073d678e5fd43bd6e1/2:1/w_2560%2Cc_limit/Eminem-Snoop-Dogg-2022-Bored-Ape-NFT.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>From The D 2 The LBC</div>
+                            <div>25 June, 2022 </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273e1b6a49e03e13939383c1e6c"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hello World</div>
+                            <div>4 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.the-rhythm.com/sites/g/files/g2000009916/files/2022-03/omah_lay_justin_bieber.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Attention</div>
+                            <div>26 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://www.billboard.com/wp-content/uploads/2022/05/onerepublic-i-aint-worried-top-gun-music-video-2022-billboard-1548.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>I Ain't Worried</div>
+                            <div>6 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://media.pitchfork.com/photos/62b5bc073d678e5fd43bd6e1/2:1/w_2560%2Cc_limit/Eminem-Snoop-Dogg-2022-Bored-Ape-NFT.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>From The D 2 The LBC</div>
+                            <div>25 June, 2022 </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273e1b6a49e03e13939383c1e6c"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hello World</div>
+                            <div>4 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.the-rhythm.com/sites/g/files/g2000009916/files/2022-03/omah_lay_justin_bieber.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Attention</div>
+                            <div>26 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://www.billboard.com/wp-content/uploads/2022/05/onerepublic-i-aint-worried-top-gun-music-video-2022-billboard-1548.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>I Ain't Worried</div>
+                            <div>6 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://media.pitchfork.com/photos/62b5bc073d678e5fd43bd6e1/2:1/w_2560%2Cc_limit/Eminem-Snoop-Dogg-2022-Bored-Ape-NFT.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>From The D 2 The LBC</div>
+                            <div>25 June, 2022 </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273e1b6a49e03e13939383c1e6c"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hello World</div>
+                            <div>4 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.the-rhythm.com/sites/g/files/g2000009916/files/2022-03/omah_lay_justin_bieber.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Attention</div>
+                            <div>26 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://www.billboard.com/wp-content/uploads/2022/05/onerepublic-i-aint-worried-top-gun-music-video-2022-billboard-1548.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>I Ain't Worried</div>
+                            <div>6 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://media.pitchfork.com/photos/62b5bc073d678e5fd43bd6e1/2:1/w_2560%2Cc_limit/Eminem-Snoop-Dogg-2022-Bored-Ape-NFT.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>From The D 2 The LBC</div>
+                            <div>25 June, 2022 </div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i.scdn.co/image/ab67616d0000b273e1b6a49e03e13939383c1e6c"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hello World</div>
+                            <div>4 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.the-rhythm.com/sites/g/files/g2000009916/files/2022-03/omah_lay_justin_bieber.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Attention</div>
+                            <div>26 March, 2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://www.billboard.com/wp-content/uploads/2022/05/onerepublic-i-aint-worried-top-gun-music-video-2022-billboard-1548.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>I Ain't Worried</div>
+                            <div>6 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <div class="headings"> Latest Hindi</div>
+
+            <div class="latest-songs-container">
+
+
+
+                <div class="latest-songs2">
+
+                    <div>
+                        <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Rabba Kharieya</div>
+                            <div>3 April,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Dil Ka Kabootar</div>
+                            <div>4 May,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Nain Ta Heere</div>
+                            <div>7 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hairaan</div>
+                            <div>3 February,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Rabba Kharieya</div>
+                            <div>3 April,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Dil Ka Kabootar</div>
+                            <div>4 May,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Nain Ta Heere</div>
+                            <div>7 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hairaan</div>
+                            <div>3 February,2022</div>
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Rabba Kharieya</div>
+                            <div>3 April,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Dil Ka Kabootar</div>
+                            <div>4 May,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Nain Ta Heere</div>
+                            <div>7 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hairaan</div>
+                            <div>3 February,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Rabba Kharieya</div>
+                            <div>3 April,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Dil Ka Kabootar</div>
+                            <div>4 May,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Nain Ta Heere</div>
+                            <div>7 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hairaan</div>
+                            <div>3 February,2022</div>
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Rabba Kharieya</div>
+                            <div>3 April,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Dil Ka Kabootar</div>
+                            <div>4 May,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Nain Ta Heere</div>
+                            <div>7 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hairaan</div>
+                            <div>3 February,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Rabba Kharieya</div>
+                            <div>3 April,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Dil Ka Kabootar</div>
+                            <div>4 May,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Nain Ta Heere</div>
+                            <div>7 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hairaan</div>
+                            <div>3 February,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Rabba Kharieya</div>
+                            <div>3 April,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Dil Ka Kabootar</div>
+                            <div>4 May,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Nain Ta Heere</div>
+                            <div>7 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hairaan</div>
+                            <div>3 February,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Rabba Kharieya</div>
+                            <div>3 April,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Dil Ka Kabootar</div>
+                            <div>4 May,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Nain Ta Heere</div>
+                            <div>7 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hairaan</div>
+                            <div>3 February,2022</div>
+
+                        </div>
+
+                    </div>
+                    <div>
+                        <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Rabba Kharieya</div>
+                            <div>3 April,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Dil Ka Kabootar</div>
+                            <div>4 May,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Nain Ta Heere</div>
+                            <div>7 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hairaan</div>
+                            <div>3 February,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Rabba Kharieya</div>
+                            <div>3 April,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Dil Ka Kabootar</div>
+                            <div>4 May,2022</div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div>
+                        <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Nain Ta Heere</div>
+                            <div>7 June,2022</div>
+
+                        </div>
+
+                    </div>
+
+                    <div>
+                        <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1"
+                            alt="song-wallpaper"><br>
+                        <div class="info">
+                            <div>Hairaan</div>
+                            <div>3 February,2022</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <div class="music-theme2">
-            <div class="outer-div">
-                <div class="inner-div">
-                    <span> Party</span>
 
-                </div>
-            </div>
-
-
-            <div class="outer-div">
-                <div class="inner-div">
-
-                    <span> Electronic</span>
-
-                </div>
-            </div>
-
-            <div class="outer-div">
-                <div class="inner-div">
-                    <span> Travel</span>
-
-                </div>
-            </div>
-        </div>
-
-
-
-        <!-- Latest English Songs -->
-        <div class="latest-songs-container">
-
-            <h2 class="color-white"> Latest English </h2>
-
-            <div class="latest-songs2">
-
-                <div>
-                    <img src="https://media.pitchfork.com/photos/62b5bc073d678e5fd43bd6e1/2:1/w_2560%2Cc_limit/Eminem-Snoop-Dogg-2022-Bored-Ape-NFT.jpg" alt="song-wallpaper"><br>
-                    <div class="info">
-                        <div>From The D 2 The LBC</div>
-                        <div>25 June, 2022 </div>
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <img src="https://i.scdn.co/image/ab67616d0000b273e1b6a49e03e13939383c1e6c" alt="song-wallpaper"><br>
-                    <div class="info">
-                        <div>Hello World</div>
-                        <div>4 March, 2022</div>
-
-                    </div>
-
-                </div>
-
-
-                <div>
-                    <img src="https://www.the-rhythm.com/sites/g/files/g2000009916/files/2022-03/omah_lay_justin_bieber.jpg" alt="song-wallpaper"><br>
-                    <div class="info">
-                        <div>Attention</div>
-                        <div>26 March, 2022</div>
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <img src="https://www.billboard.com/wp-content/uploads/2022/05/onerepublic-i-aint-worried-top-gun-music-video-2022-billboard-1548.jpg" alt="song-wallpaper"><br>
-                    <div class="info">
-                        <div>I Ain't Worried</div>
-                        <div>6 June,2022</div>
-
-                    </div>
-
-                </div>
-
-
-
-
-            </div>
-
-        </div>
-
-
-
-        <div class="latest-songs-container">
-
-            <h2 class="color-white"> Latest Hindi</h2>
-
-            <div class="latest-songs2">
-
-                <div>
-                    <img src="https://i0.wp.com/www.lyricspedia.co.in/wp-content/uploads/2022/06/Screenshot_20220621-203554.png?resize=580%2C428&ssl=1" alt="song-wallpaper"><br>
-                    <div class="info">
-                        <div>Rabba Kharieya</div>
-                        <div>3 April,2022</div>
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <img src="https://c.saavncdn.com/509/Dil-Ka-Kabootar-Hindi-2022-20220615170637-500x500.jpg" alt="song-wallpaper"><br>
-                    <div class="info">
-                        <div>Dil Ka Kabootar</div>
-                        <div>4 May,2022</div>
-
-                    </div>
-
-                </div>
-
-
-                <div>
-                    <img src="https://www.lyricswarr.in/wp-content/uploads/2022/06/Nain-Ta-Heere-Lyrics-in-Hindi.jpg" alt="song-wallpaper"><br>
-                    <div class="info">
-                        <div>Nain Ta Heere</div>
-                        <div>7 June,2022</div>
-
-                    </div>
-
-                </div>
-
-                <div>
-                    <img src="https://i0.wp.com/bollyy.com/wp-content/uploads/2022/06/Feature-Image-126-26.jpg?fit=1200%2C700&ssl=1" alt="song-wallpaper"><br>
-                    <div class="info">
-                        <div>Hairaan</div>
-                        <div>3 February,2022</div>
-
-                    </div>
-
-                </div>
-
-
-
-
-
-            </div>
-
-        </div>
     </main>
 
     <aside>
 
-        <h2 class="color-white"> Queue</h2>
+        <div id="scroll-bar">
 
 
 
-        <div class="queue color-white">
+            <header>
 
-            <div class="number inline-block">01</div>
-            <img class="song-wallpaper inline-block" src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Mirage</span><br>
-                <span>&ensp;Else</span>
-            </div>
+                <!-- <i class="fa-solid fa-guitar fa-bounce"></i> -->
+                <i class="fa-solid fa-guitar fa-shake"></i>
+                <span>Queue</span>
+            </header>
 
 
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
+
+            <div id="aside-content">
+
+
+                <div class="queue color-white">
+
+                    <div class="number"><span>01</span></div>
+                    <img class="song-wallpaper"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>26</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>27</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>28</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>29</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>30</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music To Be Murdered By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number"><span>31</span></div>
+                    <img class="song-wallpaper"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>32</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>33</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>34</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>35</span>></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music&nbsp;To&nbsp;Be&nbsp;Murdered&nbsp;By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>36</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>37</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>38</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>39</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>40</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music To Be Murdered By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>41</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>42</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>43</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>44</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>45</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music To Be Murdered By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number"><span>46</span></div>
+                    <img class="song-wallpaper"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>47</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>48</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>49</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>50</span>></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music&nbsp;To&nbsp;Be&nbsp;Murdered&nbsp;By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>51</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>52</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>53</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>54</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>55</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music To Be Murdered By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>56</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>57</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>58</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>59</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>60</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music To Be Murdered By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+                <div class="queue color-white">
+
+                    <div class="number"><span>61</span></div>
+                    <img class="song-wallpaper"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>62</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>63</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>64</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>65</span>></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music&nbsp;To&nbsp;Be&nbsp;Murdered&nbsp;By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>66</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>67</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>68</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>69</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>70</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music To Be Murdered By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>71</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>72</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>73</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>74</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>75</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music To Be Murdered By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+                <div class="queue color-white">
+
+                    <div class="number"><span>76</span></div>
+                    <img class="song-wallpaper"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>77</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>78</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>79</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>80</span>></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music&nbsp;To&nbsp;Be&nbsp;Murdered&nbsp;By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>81</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>82</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>83</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>84</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>85</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music To Be Murdered By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>86</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Mirage</span><br>
+                        <span>&ensp;Else</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>87</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Venom</span><br>
+                        <span>&ensp;Kamikaze</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>88</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Till I Collapse</span><br>
+                        <span>&ensp;The Eminem Show</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>89</span></div>
+                    <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Not Afraid</span><br>
+                        <span>&ensp;Hits June 10</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
+
+                <div class="queue color-white">
+
+                    <div class="number inline-block"><span>90</span></div>
+                    <img class="song-wallpaper inline-block"
+                        src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png"
+                        alt="song-wallpaper">
+                    <div class="song-name inline-block">
+                        <span>&ensp;Godzilla</span><br>
+                        <span>&ensp;Music To Be Murdered By</span>
+                    </div>
+
+
+                    <div class="heart-add-icon2">
+                        <i class="fa-solid fa-heart"></i>
+                    </div>
+
+
+
+
+                </div>
+
             </div>
 
 
@@ -406,333 +3371,205 @@ M
         </div>
 
 
-        <div class="queue color-white">
 
-            <div class="number inline-block">02</div>
-            <img class="song-wallpaper inline-block" src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Venom</span><br>
-                <span>&ensp;Kamikaze</span>
-            </div>
 
 
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
 
 
-
-
-        </div>
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">03</div>
-            <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Till I Collapse</span><br>
-                <span>&ensp;The Eminem Show</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">04</div>
-            <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Not Afraid</span><br>
-                <span>&ensp;Hits June 10</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">05</div>
-            <img class="song-wallpaper inline-block" src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Godzilla</span><br>
-                <span>&ensp;Music To Be Murdered By</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">06</div>
-            <img class="song-wallpaper inline-block" src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Mirage</span><br>
-                <span>&ensp;Else</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">07</div>
-            <img class="song-wallpaper inline-block" src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Venom</span><br>
-                <span>&ensp;Kamikaze</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">08</div>
-            <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Till I Collapse</span><br>
-                <span>&ensp;The Eminem Show</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">09</div>
-            <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Not Afraid</span><br>
-                <span>&ensp;Hits June 10</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">10</div>
-            <img class="song-wallpaper inline-block" src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Godzilla</span><br>
-                <span>&ensp;Music To Be Murdered By</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">11</div>
-            <img class="song-wallpaper inline-block" src="https://is4-ssl.mzstatic.com/image/thumb/Music113/v4/89/b3/ae/89b3ae26-53c6-ecc7-cb2d-e8f6f1a14a47/3614596984001_cover.jpg/375x375bb.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Mirage</span><br>
-                <span>&ensp;Else</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">12</div>
-            <img class="song-wallpaper inline-block" src="https://i.pinimg.com/originals/b7/08/39/b708395f876fb40b446abb91a37a5f5a.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Venom</span><br>
-                <span>&ensp;Kamikaze</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">13</div>
-            <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/Obim8BYGnOE/maxresdefault.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Till I Collapse</span><br>
-                <span>&ensp;The Eminem Show</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">14</div>
-            <img class="song-wallpaper inline-block" src="https://i.ytimg.com/vi/j5-yKhDd64s/maxresdefault.jpg" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Not Afraid</span><br>
-                <span>&ensp;Hits June 10</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-
-        <div class="queue color-white">
-
-            <div class="number inline-block">15</div>
-            <img class="song-wallpaper inline-block" src="https://media.pitchfork.com/photos/5e669554be35b2000813aedc/2:1/w_2560%2Cc_limit/Eminem.png" alt="song-wallpaper">
-            <div class="song-name inline-block">
-                <span>&ensp;Godzilla</span><br>
-                <span>&ensp;Music To Be Murdered By</span>
-            </div>
-
-
-            <div class="heart-add-icon2">
-                <i class="fa-solid fa-heart"></i>
-            </div>
-
-
-
-
-        </div>
-
-
-
-
-        </div>
 
     </aside>
 
-    <div id="music-player">
+    <div id="play-container">
 
-        <section id="buttons">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Imagine_Dragons%2C_Roundhouse%2C_London_%2835390234536%29.jpg/1200px-Imagine_Dragons%2C_Roundhouse%2C_London_%2835390234536%29.jpg">
-            <p class="color-white">Imagine By John</p>
-            <i class="fa-solid fa-heart"></i>
+        <div id="play-bar-container">
+            <div id="play-bar">
+            </div>
+        </div>
 
-            <i class="fa-solid fa-backward"></i>
 
-            <i class="fa-solid fa-play"></i>
-
-            <i class="fa-solid fa-forward"></i>
+        <div id="other-items-container">
 
 
 
-            <i id="vol-icon" class="fa-solid fa-volume-high"></i>
-            <div id="volume-container">
-                <div id="volume">
+            <div id="current-song">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Imagine_Dragons%2C_Roundhouse%2C_London_%2835390234536%29.jpg/1200px-Imagine_Dragons%2C_Roundhouse%2C_London_%2835390234536%29.jpg">
+                <div>
+                    <p>Imagine&nbsp;(Made&nbsp;Popular&nbsp;By...</p>
+                    <p>Party&nbsp;Tyme&nbsp;Karaoke&nbsp;-&nbsp;Party&nbsp;Ty...</p>
+
                 </div>
+
+                <i class="fa-solid fa-heart"></i>
+
+
+
+                <!-- <div class="like-container">
+
+                   
+                </div> -->
+
+
+
             </div>
 
-            <section>
 
 
-                <br>
 
-                <div id="play-bar-container">
-                    <div id="play-bar">
-                    </div>
+            <div id="buttons">
+
+                <i class="fa-solid fa-shuffle"></i>
+
+                <i class="fa-solid fa-backward-step"></i>
+
+
+                <div class="circle-container">
+                    <!-- <i class="fa-solid fa-play"></i> -->
+                    <i class="fa-solid fa-music fa-spin fa-spin-reverse"></i>
+
+
                 </div>
 
+
+                <i class="fa-solid fa-forward-step"></i>
+
+                <i class="fa-sharp fa-solid fa-repeat"></i>
+
+            </div>
+
+
+
+
+
+            <div id="download-duration-volume-playlist-container">
+
+
+                <div id="download">
+                    <i class="fa-solid fa-circle-down"></i>
+                </div>
+
+                <div id="duration">03:12&nbsp;/&nbsp;06:44</div>
+
+
+                <div id="volume">
+
+
+                    <i id="vol-icon" class="fa-solid fa-volume-high"></i>
+
+                    <div id="volume-bar-container">
+
+                        <div id="volume-bar">
+
+                            <div id="end">.</div>
+                            <div id="volume-percent"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="playlist">
+                    <a href="#"> <i class="fa-solid fa-list"></i></a>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+        </div>
 
 
 
     </div>
 
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <script type="text/javascript" src="./index.js"></script>
 
 
 
-
-
-
-
-
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
 </body>
 
+
+
+
+
+
+
+
+
+
 </html>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+<div id="logo-for-mobileDevice" style="margin:3%">
+
+    <i id="logo-x" style="color:white;font-size:4vw" class="fa-solid fa-user-ninja"></i>
+    <span class="logo-names">
+             <span class="color-white"><h3>Bhawesh <br>Studio</h3></span>
+    </span>
+
+</div>
+
+<div id="ninja-music-logo">
+    <div id="logo-y">
+        <img src="./images/ninja.png" alt="ninja muscic logo">
+    </div>
+
+    <div class="logo-names">
+        <span><h3>Bhawesh <br>Studio</h3></span>
+    </div>
+
+    <div id="favourites">
+        <a href="#"> Favourites</a>
+    </div>
+
+    <div id="search-bar">
+
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
+        <input type="text" placeholder="Search..." name="search">
+    </div>
+
+    <div id="notifications">
+        <a href=""><i class="fa-solid fa-bell"></i></a>
+    </div>
+
+    <div id="profile">
+
+        <img src="./images/bhawesh.JPG">
+
+    </div>
+
+    </section>
+
+</div>
+
+</header> -->
